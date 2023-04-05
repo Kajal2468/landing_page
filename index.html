@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing_page_DAD</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        html,body{
+            padding-left: 30px;
+            font-family:  sans-serif;
+            perspective: 40px;
+            background-color: #0a0b0b;
+          overflow-x: hidden;
+        }
+        .active,a:hover{
+            padding: 6px 15px;
+            background-color: #efac38;
+            color: white;
+            transition: 1s;
+           
+        }
+        .bg{
+            background: linear-gradient(#efac38);
+        }
+        .nav1{
+            background-color: #0a0b0b;
+
+        }
+        .dot6 div{
+          
+            animation: dots 0.8s ease  alternate   infinite;
+        }
+        .dot6 div:nth-child(2){
+            animation-delay: 0.1s;
+           
+            
+        }
+        .dot6 div:nth-child(3){
+            animation-delay: 0.3s;
+        }
+        .dot6 div:nth-child(4){
+            animation-delay: 0.5s;
+        }
+        .dot6 div:nth-child(5){
+            animation-delay: 0.7s;
+        }
+       
+        
+        @keyframes dots {
+            0%{
+            transform: translateY(-10px);
+            transform: scale(0.7) ;
+            opacity: 0;
+           
+            }
+            100%{
+         transform: translateY(10px);
+       
+        
+            }
+            
+        }
+     
+      
+
+    
+    </style>
+</head>
+<body >
+    
+   
+    <nav class="max-w-[1200px]  justify-between pt-[2rem]   mt-8 nav1  mx-auto flex">
+       
+        
+            <h1><a href="#" class=" active hover:bg-[#efac38] text-xl rounded-3xl font-bold shadow-xl">DAD</a> </h1> 
+       <div class="space-x-6 hidden lg:block lg:flex-row"> <a href="#" class=" active hover:bg-[#efac38] rounded-full hover:text-white py-[6px] px-[15px]">Home</a>
+        <a href="#" class=" hover:bg-[#efac38]  rounded-full hover:text-white py-[6x] text-white px-[15px]">About</a>
+        <a href="#" class=" hover:bg-[#efac38] rounded-full hover:text-white py-[6px] text-white px-[15px]">Destination</a>
+        <a href="#" class=" hover:bg-[#efac38] rounded-full hover:text-white py-[6px] text-white px-[15px]">Contact</a></div>
+   
+    </nav>
+
+    <!--hero section-->
+ <div class="max-w-[1200px] mx-7 lg:space-x-[8rem]  relative lg:mx-auto flex flex-col lg:flex-row ">
+    <div class="pt-[4rem] lg:pt-[10rem] space-y-3 justify-center ">
+        <h1 class="text-6xl lg:text-8xl text-[#efac38] shadow  font-light">Weekend</h1>
+        <h1 class="text-6xl lg:text-8xl text-[#fff] font-medium">With Dad</h1>
+<p class="text-white font-light text-sm ">Dad, You have given me the best things in life: Your time, your care 😍, and your love 🤍. I am truly grateful to have you in my life.....</p><br>
+        <h1 class="text-xl text-[#e9eef1] w-full  font-medium px-4 py-1 lg:rounded-sm rounded-full hover:bg-[#ef9f15] bg-[#efac38] lg:w-fit ">Learn More </h1>
+       
+    </div>
+<div class="w-[4px] hidden lg:block bg-[#efac38] h-[450px] absolute left-[30%] top-[100px] line1 shadow shadow-amber-300"></div>
+
+ <img src="papa34.png" class="relative -left-[5rem] w-[850px] animate-pulse "
+ >
+ 
+ </div>
+ <div class="flex gap-1 mb-7 mt-[-2rem] items-center justify-center dot6 relative lg:top-[-100px] left-[-50px]">
+    <div class="bg-white w-[10px] h-[10px] rounded-full"></div>
+    <div class="bg-[white] w-[10px] h-[10px] rounded-full"></div>
+    <div class="bg-white w-[10px] h-[10px] rounded-full"></div>
+    <div class="bg-white w-[10px] h-[10px] rounded-full"></div>
+    <div class="bg-white w-[10px] h-[10px] rounded-full"></div>
+    
+ </div>
+
+</body>
+</html>
